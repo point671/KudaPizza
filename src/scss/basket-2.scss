@@ -439,6 +439,9 @@
         &_none-border {
             border-bottom: none;
         }
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
     }
 
     // .inputs-block-form-main__item
@@ -569,6 +572,9 @@
         line-height: 22px;
         letter-spacing: 0px;
         text-align: left;
+        @media (max-width: $mobile) {
+            padding: 13px 10px;
+        }
     }
 
     display: flex;
@@ -728,5 +734,39 @@
             background: #ffeee2 !important;
             color: #ff7010;
         }
+    }
+}
+
+.error {
+    color: red;
+}
+
+.swiper-basket-one__swiper-button-next {
+    @media (max-width: $mobile) {
+        right: 30px !important;
+    }
+}
+
+.swiper-basket-one__swiper-button-prev {
+    @media (max-width: $mobile) {
+        left: 30px !important;
+    }
+}
+
+.swiper-basket-two__swiper-button-next {
+    @media (max-width: $mobile) {
+        right: 30px !important;
+    }
+}
+.swiper-basket-two__swiper-button-prev {
+    @media (max-width: $mobile) {
+        left: 30px !important;
+    }
+}
+
+.body-food-category_buy {
+    display: none;
+    @media (max-width: $mobile) {
+        display: flex;
     }
 }

@@ -232,6 +232,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	gap: 10px;
+	@media (max-width: $mobile) {
+		gap: 10px;
+	}
 	// .basket-header-body__logo
 
 	&__logo {
@@ -241,12 +245,22 @@
 
 	&__basket-button {
 	}
+	@media (max-width: $mobile) {
+		overflow-x: scroll;
+	}
 }
+
+.basket-header-body .basket-button-header-basket {
+	@media (max-width: $mobile) {
+		display: none;
+	}
+}
+
 .logo-body-header-basket {
 	//logo-body-header-basket__me
 
 	&__me {
-		display: none;
+		//display: none;
 	}
 
 	display: flex;
@@ -266,6 +280,9 @@
 	cursor: pointer;
 	color: #fff;
 	padding: rem(8) rem(16);
+
+	@include adaptiveValue("padding-right", 16, 8);
+	@include adaptiveValue("padding-left", 16, 8);
 	background-color: #ff7010;
 	display: flex;
 	align-items: center;
@@ -303,6 +320,7 @@
 .main-menu-pizza {
 	display: flex;
 	gap: 32px;
+	@include adaptiveValue("gap", 32, 10);
 	// .main-menu-pizza__item
 
 	&__item {
@@ -312,6 +330,10 @@
 		font-size: rem(16);
 		line-height: math.div(22, 16);
 		cursor: pointer;
+		@include adaptiveValue("font-size", 16, 13);
+	}
+	@media (max-width: $mobile) {
+		display: none;
 	}
 }
 
@@ -362,4 +384,9 @@
 ._active-other {
 	visibility: visible;
 	opacity: 1;
+}
+
+.body-food-category_buy {
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
 }

@@ -47,6 +47,41 @@ $(document).ready(function () {
                 required: true,
                 email: true
             },
+            tel: {
+                required: true,
+            },
+            name: {
+                required: true,
+            },
+        },
+        messages: {
+            email: {
+                required: "Введите адресс почты",
+                email: "Введите правильный формат адреса электронной почты"
+            },
+            name: {
+                required: "Введите адресс почты",
+            },
+            tel: {
+                required: "Введите номер телефона",
+            }
         }
     });
 });
+
+
+
+
+
+const button = document.querySelector('.popup_show');
+
+
+document.addEventListener('click', buttonClick);
+
+
+function buttonClick(e) {
+    if (e.target.closest('.popup-show')) {
+        const delShow = document.querySelector("._header-show")
+        delShow.classList.remove('_header-show')
+    }
+}

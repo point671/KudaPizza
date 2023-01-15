@@ -44,6 +44,10 @@
     // .item-food-category__img
 
     &__img {
+        @media (max-width: $mobile) {
+            width: 18px;
+            height: 18px;
+        }
     }
 
     // .item-food-category__text
@@ -56,6 +60,8 @@
         line-height: math.div(24, 18);
 
         text-align: center;
+
+        @include adaptiveValue("font-size", 18, 12);
     }
 }
 
