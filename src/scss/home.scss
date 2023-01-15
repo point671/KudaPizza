@@ -1,0 +1,696 @@
+.page {
+    background-color: #f9f9f9;
+}
+
+.category-food {
+    // .category-food__container
+
+    &__container {
+    }
+
+    // .category-food__body
+
+    &__body {
+        margin-bottom: 30px;
+    }
+}
+.body-food-category {
+    @media (max-width: $mobile) {
+        overflow-x: scroll;
+    }
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    // .body-food-category__item
+
+    &__item {
+    }
+}
+.item-food-category {
+    padding: 20px 40px;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: rem(8);
+    align-items: center;
+    @include adaptiveValue("padding-left", 40, 10, 1300, 768, 1);
+    @include adaptiveValue("padding-right", 40, 10, 1300, 768, 1);
+    @include adaptiveValue("padding-top", 20, 10, 1300, 768, 1);
+    @include adaptiveValue("padding-bottom", 20, 10, 1300, 768, 1);
+
+    // .item-food-category__img
+
+    &__img {
+    }
+
+    // .item-food-category__text
+
+    &__text {
+        //styleName: Desktop/Big text;
+        font-family: SF Pro Text;
+        font-size: rem(18);
+        font-weight: 400;
+        line-height: math.div(24, 18);
+
+        text-align: center;
+    }
+}
+
+//пицы акции
+
+.stock {
+    // .stock__container
+
+    &__container {
+    }
+
+    // .stock__body
+
+    &__body {
+        margin-bottom: 30px;
+    }
+}
+
+.body-stock {
+    display: flex;
+    @media (max-width: em(1300)) {
+        overflow-x: scroll;
+    }
+
+    justify-content: space-between;
+    gap: 30px;
+    //margin: 0px -20px;
+    // .body-stock__item
+
+    &__item {
+        border-radius: 12px;
+        flex: 0 0 300px;
+        //padding: 0px 20px;
+        //body-stock__item_1
+        &_1 {
+            // background: url("../img/main/background-actia/backgroun-pizz.png") 0 0 no-repeat;
+        }
+        //body-stock__item_2
+        &_2 {
+            //background: url("../img/main/background-actia/backgroun-pizz2.png") 0 0 no-repeat;
+        }
+    }
+}
+.item-stock-body {
+    //overflow: hidden;
+    position: relative;
+    //item-stock-body__img-wrap
+    &__img-wrap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    min-height: 343px;
+    width: 300px;
+
+    //background: url('../img/main/food-category/') 0 0 no-repeat;
+
+    // .item-stock-body__text
+
+    &__text {
+        position: relative;
+        z-index: 3;
+        padding: rem(20);
+        /* Desktop/H4 */
+        max-height: 400px;
+
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: rem(20);
+        line-height: math.div(28, 20);
+        /* or 140% */
+
+        display: flex;
+        align-items: center;
+
+        color: #ffffff;
+    }
+}
+
+//проверка аддреса
+
+.check-addres {
+    // .check-addres__container
+
+    &__container {
+    }
+
+    // .check-addres__body
+
+    &__body {
+    }
+}
+.body-addres-check {
+    // .body-addres-check__form
+
+    &__form {
+        margin-bottom: 30px;
+    }
+}
+.form-check-addres-body {
+    @media (max-width: $mobile) {
+        flex-direction: column;
+    }
+    //form-check-addres-body__wrap-addres-btn
+    &__wrap-addres-btn {
+        display: flex;
+        flex: 1;
+        gap: 20px;
+    }
+
+    //form-check-addres-body__map-icon
+    &__map-icon {
+        font-size: 18px;
+    }
+
+    //form-check-addres-body__wrap-addres
+
+    &__wrap-addres {
+        display: flex;
+        flex: 1;
+        border: 1px solid #f0f0f0;
+        border-radius: 6px;
+        padding: 13px 12px;
+        gap: 8px;
+
+        font-family: "SF Pro Text";
+        font-style: normal;
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: math.div(22, 16);
+    }
+    align-items: center;
+    background-color: #fff;
+    padding: 16px 32px;
+    display: flex;
+    gap: 20px;
+
+    // .form-check-addres-body__text
+
+    &__text {
+        font-family: "SF Pro Text";
+        font-size: rem(18);
+        font-weight: 400;
+        line-height: 24px;
+        line-height: math.div(24, 18);
+        text-align: left;
+
+        @media (max-width: $mobile) {
+            font-weight: 600;
+        }
+    }
+
+    // .form-check-addres-body__addres
+
+    &__addres {
+        flex: 1;
+        outline: none;
+    }
+
+    // .form-check-addres-body__btn
+
+    &__btn {
+    }
+}
+
+.btn-orange {
+    background-color: #fe7010;
+    padding: 13px 32px;
+    border-radius: 6px;
+    color: #fff;
+
+    font-family: "SF Pro Text";
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: 22px;
+    line-height: math.div(22, 16);
+    text-align: left;
+
+    //btn-orange__text
+    &__text {
+        @media (max-width: $mobile) {
+            display: none;
+        }
+    }
+    //btn-orange__arrow
+    &__arrow {
+    }
+
+    //btn-orange__send
+    &__send {
+        display: none;
+        @media (max-width: $mobile) {
+            display: block;
+        }
+    }
+}
+
+.catalog {
+    // .catalog__container
+
+    &__container {
+        margin-bottom: 60px;
+    }
+
+    // .catalog__body
+
+    &__body {
+    }
+}
+.body-catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    // .body-catalog__title-filter
+
+    &__title-filter {
+        margin-bottom: 32px;
+    }
+}
+.title-filter-catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // .title-filter-catalog__title
+
+    &__title {
+        //styleName: Desktop/H1;
+        font-family: "Inter";
+        font-size: rem(40);
+        font-weight: 600;
+        line-height: math.div(48, 40);
+        text-align: left;
+    }
+
+    // .title-filter-catalog__filter
+
+    &__filter {
+        font-family: "SF Pro Text";
+        font-style: normal;
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: math.div(22, 16);
+    }
+}
+.filter-catalog-filter-title {
+    padding: 12px 16px;
+    background-color: #fff;
+    display: flex;
+    gap: 8px;
+    border: 1px solid #f0f0f0;
+    border-radius: 6px;
+    align-items: center;
+    // .filter-catalog-filter-title_icon
+
+    &_icon {
+    }
+
+    // .filter-catalog-filter-title__text
+
+    &__text {
+    }
+}
+
+//каталог пицы
+
+.body-catalog {
+    // .body-catalog__food
+
+    &__food {
+    }
+}
+.food-catalog {
+    // .food-catalog__pizz
+
+    &__pizz {
+    }
+}
+.pizz-catalog-food-items {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    // .pizz-catalog-food-items__item
+
+    &__item {
+    }
+}
+.item-items-food-catalog-pizz {
+    justify-items: center;
+    //item-items-food-catalog-pizz__hit
+    position: relative;
+    &__hit {
+        background-color: #e23535;
+        width: fit-content;
+        padding: 7px 16px;
+        color: #fff;
+        font-size: rem(14);
+
+        font-family: "Inter";
+        font-weight: 400;
+        line-height: math.div(18, 14);
+        position: absolute;
+        left: 0px;
+        top: 3%;
+        text-align: center;
+        border-radius: 0px 6px 6px 0px;
+    }
+
+    align-items: self-start;
+    grid-template-rows: 300px 1fr;
+
+    //item-items-food-catalog-pizz__wrap-content
+
+    &__wrap-content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 20px;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    background-color: #fff;
+    display: grid;
+    grid-auto-flow: row;
+    // grid-template: auto 1fr 1fr minmax(40px, auto) / 1fr;
+    // // .item-items-food-catalog-pizz__wrap-img
+
+    &__wrap-img {
+        max-width: fit-content;
+    }
+
+    // .item-items-food-catalog-pizz__img
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    // .item-items-food-catalog-pizz__title
+
+    &__title {
+        font-family: "SF Pro Text";
+        font-style: normal;
+        font-weight: 600;
+        font-size: rem(18);
+        line-height: 24px;
+        line-height: math.div(24, 18);
+        color: #191919;
+    }
+
+    // .item-items-food-catalog-pizz__text
+
+    &__text {
+        font-family: "SF Pro Text";
+        font-style: normal;
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: math.div(22, 16);
+        color: #191919;
+    }
+
+    // .item-items-food-catalog-pizz__wrap-select
+
+    &__wrap-select {
+    }
+}
+.select-wrap-pizz-catalog-food-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // .select-wrap-pizz-catalog-food-item__btn-orange
+
+    &__btn-orange {
+    }
+
+    // .select-wrap-pizz-catalog-food-item__cell
+
+    &__cell {
+        font-family: "SF Pro Text";
+        font-style: normal;
+        font-weight: 600;
+        font-size: rem(18);
+        line-height: math.div(24, 18);
+        color: #ff7010;
+    }
+}
+.btn-orange {
+}
+
+.box {
+}
+.item {
+    font-weight: 600;
+    font-size: 20px;
+    border: 1px solid #000;
+    background-color: green;
+    color: #fff;
+    padding: 15px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.item-1 {
+    grid-column: 2/4;
+    grid-row: 3/1;
+}
+
+.wrap-content-pizz-catalog-food-wrap-text {
+    // .wrap-content-pizz-catalog-food-wrap-text__wrap
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+.popup {
+    // .popup__body
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.body-popup {
+    // .body-popup__title
+
+    &__title {
+    }
+
+    // .body-popup__category
+
+    &__category {
+    }
+}
+.category-popup {
+    // .category-popup__title
+
+    &__title {
+    }
+
+    // .category-popup__items
+
+    &__items {
+    }
+}
+.items-popup-category {
+    display: flex;
+    // .items-popup-category__item
+
+    &__item {
+    }
+
+    // .items-popup-category__button
+
+    &__button {
+    }
+}
+.button-category-popup {
+    // .button-category-popup__apply
+
+    &__apply {
+    }
+
+    // .button-category-popup__reset
+
+    &__reset {
+    }
+}
+
+.test {
+    // .test__container
+
+    &__container {
+    }
+
+    // .test__one
+
+    &__one {
+        font-family: Montserrat;
+    }
+
+    // .test__two
+
+    &__two {
+    }
+
+    // .test__three
+
+    &__three {
+    }
+
+    // .test__foo
+
+    &__foo {
+    }
+
+    // .test__five
+
+    &__five {
+        margin-bottom: 20px;
+        font-size: 250px;
+    }
+}
+
+.test {
+    // .test__container
+
+    &__container {
+    }
+
+    // .test__cub
+
+    &__cub {
+        width: 400px;
+        height: 400px;
+        background-color: green;
+    }
+
+    // .test__img
+
+    &__img {
+        @media (max-width: 1276px) {
+            width: auto;
+        }
+    }
+}
+
+.home-main-text {
+    // .home-main-text__container
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    // .home-main-text__body
+
+    &__body {
+    }
+}
+.body-text-main-home {
+    //body-text-main-home__title-2
+
+    &__title-2 {
+        font-weight: 800;
+    }
+
+    max-width: 850px;
+    //body-text-main-home__wrap-content
+
+    .body-text-main-home__wrap-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    //body-text-main-home__title
+
+    &__title {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: rem(32);
+        line-height: math.div(40, 32);
+    }
+
+    // .body-text-main-home__block-show
+
+    &__block-show {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    // .body-text-main-home__show-content
+
+    &__show-content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        font-family: "SF Pro Text";
+        font-style: normal;
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: math.div(22, 16);
+        /* or 138% */
+    }
+}
+.block {
+    // .block__content
+
+    &__content {
+    }
+
+    // .block__more
+
+    &__more {
+        /* Desktop/Subtitle 2 */
+
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height, or 125% */
+
+        /* Primary */
+
+        color: #ff7010;
+        text-align: left;
+    }
+}

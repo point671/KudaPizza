@@ -1,0 +1,85 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+._icon-calendar:before {
+	content: "\e900";
+	color: #a5a5a5;
+}
+._icon-combo:before {
+	content: "\e901";
+	color: #ff7010;
+}
+._icon-dessert:before {
+	content: "\e902";
+	color: #ff7010;
+}
+._icon-drink:before {
+	content: "\e903";
+	color: #ff7010;
+}
+._icon-facebok:before {
+	content: "\e904";
+	color: #ff7010;
+}
+._icon-filter:before {
+	content: "\e905";
+	color: #ff7010;
+}
+._icon-fire:before {
+	content: "\e906";
+	color: #e23535;
+}
+._icon-inst:before {
+	content: "\e907";
+	color: #ff7010;
+}
+._icon-mark-map:before {
+	content: "\e908";
+	color: #ff7010;
+}
+._icon-phone:before {
+	content: "\e909";
+	color: #ff7010;
+}
+._icon-pizza:before {
+	content: "\e90a";
+	color: #ff7010;
+}
+._icon-profil:before {
+	content: "\e90b";
+	color: #ff7010;
+}
+._icon-sauce:before {
+	content: "\e90c";
+	color: #ff7010;
+}
+._icon-send:before {
+	content: "\e90d";
+	color: #fff;
+}
+._icon-shopping-bag:before {
+	content: "\e90e";
+	color: #fff;
+}
+._icon-snacks:before {
+	content: "\e90f";
+	color: #ff7010;
+}
+._icon-sushi:before {
+	content: "\e910";
+	color: #ff7010;
+}

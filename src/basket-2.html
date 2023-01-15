@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{ "title":"Главная" })
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="your-order">
+                <div class="your-order__container">
+                    <h2 class="body-order-your__title">Ваш заказ</h2>
+                    <div class="your-order__body body-order-your">
+
+                        <form id="form-your-order-id" class="body-order-your__form form-your-order" action="">
+                            <div class="count-cell-order-your-form__items items-form-your-order-cell">
+                                <div class="items-form-your-order-cell__item">
+                                    <div class="form-your-order__wrap-left">
+                                        <div class="form-your-order__wrap-img">
+                                            <img class="form-your-order__img" src="img/basket-2/pizza.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="form-your-order__count-cell count-cell-order-your-form">
+                                        <div class="count-cell-order-your-form__count">
+                                            <div class="form-your-order__wrap-text">
+                                                <div class="form-your-order__title">Пепперони по-деревенски</div>
+                                                <div class="form-your-order__text">Традиционное тесто, 23 см</div>
+                                            </div>
+                                        </div>
+                                        <div class="items-form-your-order-cell__wrap-quantity">
+                                            <div class="quantity">
+                                                <div class="quantity__button quantity__button_minus _icon-minus"></div>
+                                                <div class="quantity__input"><input autocomplete="off" type="text"
+                                                        name="form[]" value="1"></div>
+                                                <div class="quantity__button quantity__button_plus _icon-plus"></div>
+                                            </div>
+                                            <div class="count-cell-order-your-form__cell">399 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="items-form-your-order-cell__item">
+                                    <div class="form-your-order__wrap-left">
+                                        <div class="form-your-order__wrap-img">
+                                            <img class="form-your-order__img" src="img/basket-2/pizza.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="form-your-order__count-cell count-cell-order-your-form">
+                                        <div class="count-cell-order-your-form__count">
+                                            <div class="form-your-order__wrap-text">
+                                                <div class="form-your-order__title">Пепперони по-деревенски</div>
+                                                <div class="form-your-order__text">Традиционное тесто, 23 см</div>
+                                            </div>
+                                        </div>
+                                        <div class="items-form-your-order-cell__wrap-quantity">
+                                            <div class="quantity">
+                                                <div class="quantity__button quantity__button_minus _icon-minus"></div>
+                                                <div class="quantity__input"><input autocomplete="off" type="text"
+                                                        name="form[]" value="1"></div>
+                                                <div class="quantity__button quantity__button_plus _icon-plus"></div>
+                                            </div>
+                                            <div class="count-cell-order-your-form__cell">399 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="count-cell-order-your-form__promo-code promo-code-form-your-order">
+                                <div class="promo-code-form-your-order__input input-order-your-form-code">
+                                    <input type="text" data-error="Ошибка" placeholder="Промокод"
+                                        class="input-order-your-form-code__input ">
+                                    <div class="input-order-your-form-code__btn btn-code-form-your-order">
+                                        <span class="btn-code-form-your-order__icon _icon-send"></span>
+                                    </div>
+                                </div>
+                                <div class="promo-code-form-your-order__price price-order-your-form-code">
+                                    <div class="price-order-your-form-code__text">Итого:</div>
+                                    <div class="price-order-your-form-code__number">2 379 ₽</div>
+                                </div>
+                            </div>
+
+                            <div class="add-to-order">
+                                <div class="add-to-order__container">
+                                    <div class="add-to-order__body body-order-to-add">
+                                        <h3 class="body-order-to-add__title">
+                                            Добавить к заказу?
+                                        </h3>
+                                        <!-- Оболочка слайдера -->
+                                        <div class="add-slider__slider swiper swiper-basket-one">
+                                            <!-- Двигающееся часть слайдера -->
+                                            <div class="add-slider__wrapper swiper-wrapper">
+                                                <!-- Слайд -->
+                                                <div class="add-slider__slide swiper-slide">
+                                                    <div class="swiper-slide__card card-slide-swiper">
+                                                        <div class="card-slide-swiper__wrap-img _ibg">
+                                                            <img class="card-slide-swiper__img"
+                                                                src="img/basket-2/desert/potato.png " alt="">
+                                                        </div>
+                                                        <div class="card-slide-swiper__wrap">
+                                                            <div class="card-slide-swiper__title">Картофель из печи
+                                                            </div>
+                                                            <div class="card-slide-swiper__text">Порция 95 г</div>
+                                                            <div class="card-slide-swiper__button btn-orange">179 ₽
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-slider__slide swiper-slide">
+                                                    <div class="swiper-slide__card card-slide-swiper">
+                                                        <div class="card-slide-swiper__wrap-img _ibg">
+                                                            <img class="card-slide-swiper__img"
+                                                                src="img/basket-2/desert/potato.png " alt="">
+                                                        </div>
+                                                        <div class="card-slide-swiper__wrap">
+                                                            <div class="card-slide-swiper__title">Картофель из печи
+                                                            </div>
+                                                            <div class="card-slide-swiper__text">Порция 95 г</div>
+                                                            <div class="card-slide-swiper__button btn-orange">179 ₽
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-slider__slide swiper-slide">
+                                                    <div class="swiper-slide__card card-slide-swiper">
+                                                        <div class="card-slide-swiper__wrap-img _ibg">
+                                                            <img class="card-slide-swiper__img"
+                                                                src="img/basket-2/desert/potato.png " alt="">
+                                                        </div>
+                                                        <div class="card-slide-swiper__wrap">
+                                                            <div class="card-slide-swiper__title">Картофель из печи
+                                                            </div>
+                                                            <div class="card-slide-swiper__text">Порция 95 г</div>
+                                                            <div class="card-slide-swiper__button btn-orange">179 ₽
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-slider__slide swiper-slide">
+                                                    <div class="swiper-slide__card card-slide-swiper">
+                                                        <div class="card-slide-swiper__wrap-img _ibg">
+                                                            <img class="card-slide-swiper__img"
+                                                                src="img/basket-2/desert/potato.png " alt="">
+                                                        </div>
+                                                        <div class="card-slide-swiper__wrap">
+                                                            <div class="card-slide-swiper__title">Картофель из печи
+                                                            </div>
+                                                            <div class="card-slide-swiper__text">Порция 95 г</div>
+                                                            <div class="card-slide-swiper__button btn-orange">179 ₽
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-slider__slide swiper-slide">
+                                                    <div class="swiper-slide__card card-slide-swiper">
+                                                        <div class="card-slide-swiper__wrap-img _ibg">
+                                                            <img class="card-slide-swiper__img"
+                                                                src="img/basket-2/desert/potato.png " alt="">
+                                                        </div>
+                                                        <div class="card-slide-swiper__wrap">
+                                                            <div class="card-slide-swiper__title">Картофель из печи
+                                                            </div>
+                                                            <div class="card-slide-swiper__text">Порция 95 г</div>
+                                                            <div class="card-slide-swiper__button btn-orange">179 ₽
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-slider__slide swiper-slide">
+                                                    <div class="swiper-slide__card card-slide-swiper">
+                                                        <div class="card-slide-swiper__wrap-img _ibg">
+                                                            <img class="card-slide-swiper__img"
+                                                                src="img/basket-2/desert/potato.png " alt="">
+                                                        </div>
+                                                        <div class="card-slide-swiper__wrap">
+                                                            <div class="card-slide-swiper__title">Картофель из печи
+                                                            </div>
+                                                            <div class="card-slide-swiper__text">Порция 95 г</div>
+                                                            <div class="card-slide-swiper__button btn-orange">179 ₽
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-slider__slide swiper-slide">
+                                                    <div class="swiper-slide__card card-slide-swiper">
+                                                        <div class="card-slide-swiper__wrap-img _ibg">
+                                                            <img class="card-slide-swiper__img"
+                                                                src="img/basket-2/desert/potato.png " alt="">
+                                                        </div>
+                                                        <div class="card-slide-swiper__wrap">
+                                                            <div class="card-slide-swiper__title">Картофель из печи
+                                                            </div>
+                                                            <div class="card-slide-swiper__text">Порция 95 г</div>
+                                                            <div class="card-slide-swiper__button btn-orange">179 ₽
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Если нужна пагинация -->
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                        <!-- Если нужна навигация (влево/вправо) -->
+                                        <button type="button"
+                                            class="swiper-button-prev swiper-basket-one__swiper-button-prev"></button>
+                                        <button type="button"
+                                            class="swiper-button-next swiper-basket-one__swiper-button-next"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add-to-order">
+                                <div class="add-to-order__container">
+                                    <div class="add-to-order__body body-order-to-add">
+                                        <h3 class="body-order-to-add__title">
+                                            Добавить к заказу?
+                                        </h3>
+                                        <!-- Оболочка слайдера -->
+                                        <div class="add-slider__slider swiper swiper-basket-two">
+                                            <!-- Двигающееся часть слайдера -->
+                                            <div class="add-slider__wrapper swiper-wrapper">
+                                                <!-- Слайд -->
+                                                <div class="add-slider__slide swiper-slide">
+                                                    <div class="swiper-slide__card card-slide-swiper">
+                                                        <div class="card-slide-swiper__wrap-img _ibg">
+                                                            <img class="card-slide-swiper__img"
+                                                                src="img/basket-2/desert/potato.png " alt="">
+                                                        </div>
+                                                        <div class="card-slide-swiper__wrap">
+                                                            <div class="card-slide-swiper__title">Картофель из печи
+                                                            </div>
+                                                            <div class="card-slide-swiper__text">Порция 95 г</div>
+                                                            <div class="card-slide-swiper__button btn-orange">179 ₽
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-slider__slide swiper-slide">
+                                                    <div class="swiper-slide__card card-slide-swiper">
+                                                        <div class="card-slide-swiper__wrap-img _ibg">
+                                                            <img class="card-slide-swiper__img"
+                                                                src="img/basket-2/desert/potato.png " alt="">
+                                                        </div>
+                                                        <div class="card-slide-swiper__wrap">
+                                                            <div class="card-slide-swiper__title">Картофель из печи
+                                                            </div>
+                                                            <div class="card-slide-swiper__text">Порция 95 г</div>
+                                                            <div class="card-slide-swiper__button btn-orange">179 ₽
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-slider__slide swiper-slide">
+                                                    <div class="swiper-slide__card card-slide-swiper">
+                                                        <div class="card-slide-swiper__wrap-img _ibg">
+                                                            <img class="card-slide-swiper__img"
+                                                                src="img/basket-2/desert/potato.png " alt="">
+                                                        </div>
+                                                        <div class="card-slide-swiper__wrap">
+                                                            <div class="card-slide-swiper__title">Картофель из печи
+                                                            </div>
+                                                            <div class="card-slide-swiper__text">Порция 95 г</div>
+                                                            <div class="card-slide-swiper__button btn-orange">179 ₽
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-slider__slide swiper-slide">
+                                                    <div class="swiper-slide__card card-slide-swiper">
+                                                        <div class="card-slide-swiper__wrap-img _ibg">
+                                                            <img class="card-slide-swiper__img"
+                                                                src="img/basket-2/desert/potato.png " alt="">
+                                                        </div>
+                                                        <div class="card-slide-swiper__wrap">
+                                                            <div class="card-slide-swiper__title">Картофель из печи
+                                                            </div>
+                                                            <div class="card-slide-swiper__text">Порция 95 г</div>
+                                                            <div class="card-slide-swiper__button btn-orange">179 ₽
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-slider__slide swiper-slide">
+                                                    <div class="swiper-slide__card card-slide-swiper">
+                                                        <div class="card-slide-swiper__wrap-img _ibg">
+                                                            <img class="card-slide-swiper__img"
+                                                                src="img/basket-2/desert/potato.png " alt="">
+                                                        </div>
+                                                        <div class="card-slide-swiper__wrap">
+                                                            <div class="card-slide-swiper__title">Картофель из печи
+                                                            </div>
+                                                            <div class="card-slide-swiper__text">Порция 95 г</div>
+                                                            <div class="card-slide-swiper__button btn-orange">179 ₽
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-slider__slide swiper-slide">
+                                                    <div class="swiper-slide__card card-slide-swiper">
+                                                        <div class="card-slide-swiper__wrap-img _ibg">
+                                                            <img class="card-slide-swiper__img"
+                                                                src="img/basket-2/desert/potato.png " alt="">
+                                                        </div>
+                                                        <div class="card-slide-swiper__wrap">
+                                                            <div class="card-slide-swiper__title">Картофель из печи
+                                                            </div>
+                                                            <div class="card-slide-swiper__text">Порция 95 г</div>
+                                                            <div class="card-slide-swiper__button btn-orange">179 ₽
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-slider__slide swiper-slide">
+                                                    <div class="swiper-slide__card card-slide-swiper">
+                                                        <div class="card-slide-swiper__wrap-img _ibg">
+                                                            <img class="card-slide-swiper__img"
+                                                                src="img/basket-2/desert/potato.png " alt="">
+                                                        </div>
+                                                        <div class="card-slide-swiper__wrap">
+                                                            <div class="card-slide-swiper__title">Картофель из печи
+                                                            </div>
+                                                            <div class="card-slide-swiper__text">Порция 95 г</div>
+                                                            <div class="card-slide-swiper__button btn-orange">179 ₽
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Если нужна пагинация -->
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                        <!-- Если нужна навигация (влево/вправо) -->
+                                        <button type="button"
+                                            class="swiper-button-prev swiper-basket-two__swiper-button-prev"></button>
+                                        <button type="button"
+                                            class="swiper-button-next swiper-basket-two__swiper-button-next"></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-form-block">
+                                <div class="main-form-block__title">О вас</div>
+                                <div class="main-form-block__inputs inputs-block-form-main">
+                                    <div class="inputs-block-form-main__wrap inputs-block-form-main__wrap_none-border">
+                                        <div class="inputs-block-form-main__item item-main-form-block-inputs">
+                                            <div class="item-main-form-block-inputs__name">Имя*</div>
+                                            <input type="text" placeholder="Алексей1"
+                                                class="item-main-form-block-inputs__input" name="email">
+                                        </div>
+                                        <div class="inputs-block-form-main__item item-main-form-block-inputs">
+                                            <div class="item-main-form-block-inputs__name">Номер телефона*</div>
+                                            <input type="text" name="form[]" placeholder="+7"
+                                                class="item-main-form-block-inputs__input">
+                                        </div>
+                                        <div class="inputs-block-form-main__item item-main-form-block-inputs">
+                                            <div class="item-main-form-block-inputs__name">Почта</div>
+                                            <input type="text" name="form[]" placeholder="mail@gmail.com"
+                                                class="item-main-form-block-inputs__input">
+                                        </div>
+                                    </div>
+                                    <div class="inputs-block-form-main__wrap inputs-block-form-main__wrap_delivery">
+                                        <div
+                                            class="inputs-block-form-main__title-delivery title-delivery-main-form-block-inputs">
+                                            <div class="title-delivery-main-form-block-inputs__title">Доставка</div>
+                                            <div class="title-delivery-main-form-block-inputs__wrap">
+                                                <div
+                                                    class="title-delivery-main-form-block-inputs__select title-delivery-main-form-block-inputs__select_orange">
+                                                    Доставка
+                                                </div>
+                                                <div class="title-delivery-main-form-block-inputs__select">Самовывоз
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inputs-block-form-main__item item-main-form-block-inputs">
+                                            <div class="item-main-form-block-inputs__name">Улица*</div>
+                                            <input type="text" name="form[]" placeholder="Пушкина"
+                                                class="item-main-form-block-inputs__input">
+                                        </div>
+                                        <div class="inputs-block-form-main__wrap">
+                                            <div class="inputs-block-form-main__item item-main-form-block-inputs">
+                                                <div class="item-main-form-block-inputs__name">Дом</div>
+                                                <input type="text" name="form[]" placeholder="1a"
+                                                    class="item-main-form-block-inputs__input">
+                                            </div>
+                                            <div class="inputs-block-form-main__item item-main-form-block-inputs">
+                                                <div class="item-main-form-block-inputs__name">Подъезд</div>
+                                                <input type="text" name="form[]" placeholder="1"
+                                                    class="item-main-form-block-inputs__input">
+                                            </div>
+                                            <div class="inputs-block-form-main__item item-main-form-block-inputs">
+                                                <div class="item-main-form-block-inputs__name">Этаж</div>
+                                                <input type="text" name="form[]" placeholder="2"
+                                                    class="item-main-form-block-inputs__input">
+                                            </div>
+                                            <div class="inputs-block-form-main__item item-main-form-block-inputs">
+                                                <div class="item-main-form-block-inputs__name">Квартира </div>
+                                                <input type="text" name="form[]" placeholder="3"
+                                                    class="item-main-form-block-inputs__input">
+                                            </div>
+                                            <div class="inputs-block-form-main__item item-main-form-block-inputs">
+                                                <div class="item-main-form-block-inputs__name">Домофон</div>
+                                                <input type="text" name="form[]" placeholder="0000"
+                                                    class="item-main-form-block-inputs__input">
+                                            </div>
+                                        </div>
+
+                                        <div class="basket-when-to-place">
+                                            <div class="basket-when-to-place__title">Когда выполнить заказ?</div>
+                                            <div class="options basket-when-to-place__options">
+                                                <div class="options__item">
+                                                    <input hidden id="o_1" class="options__input" checked type="radio"
+                                                        value="1" name="option">
+                                                    <label for="o_1" class="options__label"><span
+                                                            class="options__text">Как можно скорее</span></label>
+                                                </div>
+                                                <div class="options__item">
+                                                    <input hidden id="o_2" class="options__input" type="radio" value="2"
+                                                        name="option">
+                                                    <label for="o_2" class="options__label"><span
+                                                            class="options__text">По времени</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="basket-when-to-place">
+                                            <div class="basket-when-to-place__title basket-when-to-place__bold">Когда
+                                                выполнить заказ?</div>
+                                            <div class="options basket-when-to-place__options">
+                                                <div class="options__item">
+                                                    <input hidden id="s_1" class="options__input" checked type="radio"
+                                                        value="1" name="option">
+                                                    <label for="s_1" class="options__label"><span
+                                                            class="options__text">Наличными</span></label>
+                                                </div>
+                                                <div class="options__item">
+                                                    <input hidden id="s_2" class="options__input" type="radio" value="2"
+                                                        name="option">
+                                                    <label for="s_2" class="options__label"><span
+                                                            class="options__text">Картой</span></label>
+                                                </div>
+                                                <div class="options__item">
+                                                    <input hidden id="s_2" class="options__input" type="radio" value="2"
+                                                        name="option">
+                                                    <label for="s_2" class="options__label"><span
+                                                            class="options__text">Apple Pay</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="basket-when-to-place">
+                                            <div class="basket-when-to-place__title basket-when-to-place__bold">Когда
+                                                выполнить заказ?</div>
+                                            <div class="options basket-when-to-place__options">
+                                                <div class="options__item">
+                                                    <input hidden id="s_1" class="options__input" checked type="radio"
+                                                        value="1" name="option">
+                                                    <label for="s_1" class="options__label"><span
+                                                            class="options__text">Без сдачи</span></label>
+                                                </div>
+                                                <div class="options__item">
+                                                    <input hidden id="s_2" class="options__input" type="radio" value="2"
+                                                        name="option">
+                                                    <label for="s_2" class="options__label"><span
+                                                            class="options__text">Сдача с</span></label>
+
+
+                                                </div>
+                                                <input type="text" placeholder="0                          ₽"
+                                                    class="input basket-when-to-place__input">
+
+                                            </div>
+                                        </div>
+
+                                        <div class="basket-comment">
+                                            <div class="basket-comment__title">Комментарий</div>
+                                            <textarea placeholder="Есть уточнения?"
+                                                class="input basket-comment__text-area" name="basket-comment" id=""
+                                                cols="30" rows="10"></textarea>
+                                        </div>
+
+                                        <div class="basket-result-button">
+                                            <div class="basket-result-button__cell cell-button-result-basket">
+                                                <div class="cell-button-result-basket__text">Итого:</div>
+                                                <div class="cell-button-result-basket__number">2 379 ₽</div>
+                                            </div>
+                                            <button class="basket-result-button__button">Оформить заказ</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </section>
+    </main>
+    @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+
+</body>
+
+</html>
