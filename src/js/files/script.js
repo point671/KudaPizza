@@ -82,6 +82,8 @@ document.addEventListener('click', buttonClick);
 function buttonClick(e) {
     if (e.target.closest('.popup-show')) {
         const delShow = document.querySelector("._header-show")
-        delShow.classList.remove('_header-show')
+        if (delShow) {
+            delShow.classList.remove('_header-show')
+        }
     }
 }
