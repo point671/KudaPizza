@@ -9,7 +9,8 @@
 		padding: rem(10) rem(15);
 		border-radius: rem(5);
 		&._tab-active {
-			border: 1px solid #000;
+			background-color: #ff7010;
+			color: #fff;
 		}
 	}
 	// .tabs__content

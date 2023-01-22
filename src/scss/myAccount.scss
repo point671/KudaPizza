@@ -1,0 +1,50 @@
+.tabs-account {
+    // .tabs-account__navigation
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .tabs-account__main-title
+
+    &__main-title {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    // .tabs-account__wrap
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    // .tabs-account__title
+
+    &__title {
+        //styleName: Desktop/Normal;
+        font-family: SF Pro Text;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    // .tabs-account__content
+
+    &__content {
+    }
+
+    // .tabs-account__body
+
+    &__body {
+    }
+}
