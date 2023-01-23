@@ -48,3 +48,120 @@
     &__body {
     }
 }
+
+.spollers {
+    // .spollers__item
+
+    &__item {
+    }
+
+    // .spollers__title
+
+    &__title {
+        padding: 16px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .spollers__body
+
+    &__body {
+    }
+}
+.spoller-account-body {
+    // .spoller-account-body__item
+
+    &__item {
+        margin-bottom: 12px;
+    }
+
+    // .spoller-account-body__down-text
+
+    &__down-text {
+    }
+}
+.item-body-account-spoller {
+    display: flex;
+
+    justify-content: space-between;
+    // .item-body-account-spoller__title
+
+    &__title {
+    }
+
+    // .item-body-account-spoller__text
+
+    &__text {
+        &_first {
+            //text-spoller-account-body-item__text_first
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -11px;
+                top: 0px;
+                height: 100%;
+                width: 4px;
+                border-radius: 24px;
+                background-color: #e23535;
+            }
+        }
+    }
+}
+.text-spoller-account-body-item {
+    border-bottom: 1px solid #f0f0f0;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    // .text-spoller-account-body-item__title
+
+    &__title {
+        //styleName: Desktop/Mini;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: left;
+
+        color: #a5a5a5;
+    }
+
+    // .text-spoller-account-body-item__text
+
+    &__text {
+    }
+}
+.text-item-body-account-spoller {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+
+    // .text-item-body-account-spoller__number
+
+    &__number {
+    }
+
+    // .text-item-body-account-spoller__date
+
+    &__date {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+
+        /* Gray text */
+
+        color: #a5a5a5;
+    }
+}
+
+.content-down-spollers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
