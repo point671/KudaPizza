@@ -87,3 +87,10 @@ function buttonClick(e) {
         }
     }
 }
+
+
+
+//Верификация кода
+
+
+
