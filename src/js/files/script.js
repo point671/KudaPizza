@@ -27,7 +27,7 @@ function otherOnOff(e) {
         otherElem.classList.toggle('_active-other');
         console.log('переключить');
     }
-    if (!e.target.closest(".item-pizza-menu-main-other")) {
+    if (!e.target.closest(".main-menu-pizza__item_other")) {
         otherElem.classList.remove('_active-other');
         console.log('Удалить');
     }

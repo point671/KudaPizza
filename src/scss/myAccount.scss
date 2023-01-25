@@ -165,3 +165,136 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.body-main-my-account {
+    // .body-main-my-account__paggination
+
+    &__paggination {
+    }
+}
+.paggination-account-my-main-body {
+    // .paggination-account-my-main-body__block
+
+    &__block {
+    }
+}
+.block-body-main-my-account-paggination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    // .block-body-main-my-account-paggination__button
+
+    &__button {
+    }
+
+    // .block-body-main-my-account-paggination__number
+
+    &__number {
+    }
+}
+.button-paggination-account-my-main-block {
+    display: flex;
+
+    background: #ff7010;
+    padding: 15px;
+
+    border-radius: 6px;
+
+    // .button-paggination-account-my-main-block__img
+
+    &__img {
+        width: 17px;
+        height: 17px;
+        //button-paggination-account-my-main-block__img_rotate
+        &_rotate {
+            transform: rotate(180deg);
+        }
+    }
+}
+.number-paggination-account-my-main-block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    // .number-paggination-account-my-main-block__item
+
+    &__item {
+        padding: 15px;
+        border: 1px solid #f0f0f0;
+        border-radius: 6px;
+        //styleName: Desktop/Normal;
+        font-family: SF Pro Text;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+}
+.spollers {
+    // .spollers__body
+
+    &__body {
+    }
+}
+.body-spollers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // .body-spollers__img
+
+    &__img {
+    }
+
+    // .body-spollers__title
+
+    &__title {
+        //styleName: Desktop/Subtitle 2;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    // .body-spollers__text
+
+    &__text {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #191919;
+    }
+
+    // .body-spollers__tovar
+
+    &__tovar {
+        background: #ffeee2;
+        border-radius: 6px;
+        padding: 10px 20px;
+        //styleName: Desktop/Subtitle 2;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #ff7010;
+    }
+
+    // .body-spollers__buy
+
+    &__buy {
+        //styleName: Desktop/Subtitle 2;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #ff7010;
+    }
+}
