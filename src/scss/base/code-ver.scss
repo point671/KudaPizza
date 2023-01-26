@@ -1,0 +1,91 @@
+.form-control {
+    padding: 1.3rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    background: #fff;
+    display: block;
+    height: 50px;
+    margin-right: 0.5rem;
+    text-align: center;
+    font-size: 1.25rem;
+    min-width: 0;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.login-code {
+    width: 100%;
+    // .login-code__wrapper
+
+    &__wrapper {
+    }
+
+    // .login-code__content
+
+    &__content {
+    }
+
+    // .login-code__body
+
+    &__body {
+    }
+}
+.product-selection {
+    // .product-selection__close
+
+    &__close {
+    }
+}
+.close {
+}
+.body-popup {
+}
+.body-code-login {
+    overflow: auto;
+}
+.form-control {
+    height: fit-content;
+    max-width: fit-content;
+}
+.text-center {
+    //styleName: Desktop/H2;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.mb-4__text {
+    margin-bottom: 20px;
+}
+.mb-4 {
+}
+.d-flex {
+    display: flex;
+    margin-bottom: 20px;
+}
+.mb-3 {
+}
+.w-100 {
+}
+.btn {
+}
+.btn-primary {
+    background: #ff7010;
+    border-radius: 6px;
+    color: #fff;
+    padding: 13px 40px 13px 40px;
+    //styleName: Desktop/Normal;
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+}

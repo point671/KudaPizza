@@ -294,12 +294,27 @@
 
 
 
-<div id="login-code" aria-hidden="true" class="popup popup-code">
-	<div class="popup__wrapper popup-code__wrapper">
-		<div class="popup__content popup-code__content">
+<div id="login-code" aria-hidden="true" class="popup login-code">
+	<div class="popup__wrapper login-code__wrapper">
+		<div class="popup__content login-code__content">
 			<button data-close type="button" class="product-selection__close close"></button>
-			<div class="popup__body body-popup popup-code__body body-code-popup">
-
+			<div class="popup__body body-popup login-code__body body-code-login">
+				<form class="form-control" action="#">
+					<h4 class="text-center mb-4">Enter your code</h4>
+					<div class="d-flex mb-3">
+						<input type="tel" maxlength="1" pattern="[0-9]" class="form-control">
+						<input type="tel" maxlength="1" pattern="[0-9]" class="form-control">
+						<input type="tel" maxlength="1" pattern="[0-9]" class="form-control">
+						<input type="tel" maxlength="1" pattern="[0-9]" class="form-control">
+						<input type="tel" maxlength="1" pattern="[0-9]" class="form-control">
+						<input type="tel" maxlength="1" pattern="[0-9]" class="form-control">
+					</div>
+					<button type="submit" class="w-100 btn btn-primary">Войти</button>
+					<div class="form-control">
+						<div class="btn-primary__send">Отправить код ещё раз через:</div>
+						<div class="btn-primary__time">59 секунд</div>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
