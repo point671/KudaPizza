@@ -40,7 +40,9 @@ body::after {
     visibility: visible;
     transform: scale(1);
     position: absolute;
-    margin-top: 430px;
+    @media (max-width: $mobile) {
+        margin-top: 430px;
+    }
 }
 .product-selection__wrapper {
     display: flex;
