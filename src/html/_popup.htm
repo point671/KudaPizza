@@ -63,15 +63,14 @@
 
 
 <div id="product-selection" aria-hidden="true" class="popup product-selection">
-	<div class="product-selection__wrapper">
-		<div class="product-selection__content">
+	<div class="popup__wrapper product-selection__wrapper">
+		<div class="popup__content product-selection__content">
 			<button data-close type="button" class="product-selection__close close"></button>
-			<div class="product-selection__text text-product-selection">
+			<div class="popup__body product-selection__text text-product-selection">
 				<div class="text-product-selection__left left-selection-product">
 					<div class="left-selection-product__pic-wrap _ibg">
 						<img class="left-selection-product__pic" src="@img/popup-main/Rectangle4.png" alt="">
 					</div>
-
 				</div>
 				<form class="text-product-selection__right right-selection-product">
 					<div class="right-selection-product__title title-product-selection-right">
@@ -84,7 +83,6 @@
 						<div class="title-product-selection-right__info">
 							<img src="@img/popup-main/Info.svg" alt="">
 						</div>
-
 					</div>
 					<div class="text-right-selection-product-title__items-up items-up-title-product-selection">
 						<div class="items-up-title-product-selection__item item-selection-product-title-up">
@@ -118,29 +116,28 @@
 					</div>
 					<div
 						class="item-selection-product-title-up__selection-size selection-size-up-title-product-selection">
-
 						<div class="options selection-type-up-title-product-selection__options">
 							<div class="options__item selection-type-up-title-product-selection__item">
-								<input hidden id="o_1"
+								<input hidden id="h_1"
 									class="options__input selection-type-up-title-product-selection__input" checked
 									type="radio" value="1" name="size-pizza">
-								<label for="o_1"
+								<label for="h_1"
 									class="options__label selection-type-up-title-product-selection__label"><span
 										class="options__text selection-type-up-title-product-selection__text">Текст</span></label>
 							</div>
 							<div class="options__item selection-type-up-title-product-selection__item">
-								<input hidden id="o_2"
+								<input hidden id="h_2"
 									class="options__input selection-type-up-title-product-selection__input" checked
 									type="radio" value="1" name="size-pizza">
-								<label for="o_2"
+								<label for="h_2"
 									class="options__label selection-type-up-title-product-selection__label"><span
 										class="options__text selection-type-up-title-product-selection__text">Текст</span></label>
 							</div>
 							<div class="options__item selection-type-up-title-product-selection__item">
-								<input hidden id="o_2"
+								<input hidden id="h_3"
 									class="options__input selection-type-up-title-product-selection__input" checked
 									type="radio" value="1" name="size-pizza">
-								<label for="o_2"
+								<label for="h_3"
 									class="options__label selection-type-up-title-product-selection__label"><span
 										class="options__text selection-type-up-title-product-selection__text">Текст</span></label>
 							</div>
@@ -151,13 +148,12 @@
 						<div class="selection-add-up-title-product-selection__text">Добавьте в пиццу</div>
 						<div
 							class="options selection-add-up-title-product-selection__options options-selection-product-title-up-add">
-
 							<div class="options-selection-product-title-up-add__wrap">
 								<div class="options__item options-selection-product-title-up-add__item">
-									<input hidden id="o_1"
+									<input hidden id="l_1"
 										class="options__input options-selection-product-title-up-add__input" checked
 										type="radio" value="1" name="option">
-									<label for="o_1"
+									<label for="l_1"
 										class="options__label options-selection-product-title-up-add__label">
 										<img class="options-selection-product-title-up-add__img"
 											src="@img/popup-main/cheese.svg" alt="">
@@ -171,10 +167,10 @@
 							</div>
 							<div class="options-selection-product-title-up-add__wrap">
 								<div class="options__item options-selection-product-title-up-add__item">
-									<input hidden id="o_1"
+									<input hidden id="l_2"
 										class="options__input options-selection-product-title-up-add__input" checked
 										type="radio" value="1" name="option">
-									<label for="o_1"
+									<label for="l_2"
 										class="options__label options-selection-product-title-up-add__label">
 										<img class="options-selection-product-title-up-add__img"
 											src="@img/popup-main/cheese.svg" alt="">
@@ -188,10 +184,10 @@
 							</div>
 							<div class="options-selection-product-title-up-add__wrap">
 								<div class="options__item options-selection-product-title-up-add__item">
-									<input hidden id="o_1"
+									<input hidden id="l_3"
 										class="options__input options-selection-product-title-up-add__input" checked
 										type="radio" value="1" name="option">
-									<label for="o_1"
+									<label for="l_3"
 										class="options__label options-selection-product-title-up-add__label">
 										<img class="options-selection-product-title-up-add__img"
 											src="@img/popup-main/cheese.svg" alt="">
@@ -205,10 +201,10 @@
 							</div>
 							<div class="options-selection-product-title-up-add__wrap">
 								<div class="options__item options-selection-product-title-up-add__item">
-									<input hidden id="o_1"
+									<input hidden id="y_4"
 										class="options__input options-selection-product-title-up-add__input" checked
 										type="radio" value="1" name="option">
-									<label for="o_1"
+									<label for="y_4"
 										class="options__label options-selection-product-title-up-add__label">
 										<img class="options-selection-product-title-up-add__img"
 											src="@img/popup-main/cheese.svg" alt="">
@@ -260,16 +256,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 <div id="login-header" aria-hidden="true" class="popup popup-code">
 	<div class="popup__wrapper popup-code__wrapper">
 		<div class="popup__content popup-code__content">
@@ -300,17 +286,22 @@
 			<button data-close type="button" class="product-selection__close close"></button>
 			<div class="popup__body body-popup login-code__body body-code-login">
 				<form class="form-control" action="#">
-					<h4 class="text-center mb-4">Enter your code</h4>
+					<h4 class="text-center mb-4">Код из смс</h4>
+					<div class="mb-4__text-2">На номер +7 (926) 223-10-11</div>
+
 					<div class="d-flex mb-3">
-						<input type="tel" maxlength="1" pattern="[0-9]" class="form-control">
-						<input type="tel" maxlength="1" pattern="[0-9]" class="form-control">
-						<input type="tel" maxlength="1" pattern="[0-9]" class="form-control">
-						<input type="tel" maxlength="1" pattern="[0-9]" class="form-control">
-						<input type="tel" maxlength="1" pattern="[0-9]" class="form-control">
-						<input type="tel" maxlength="1" pattern="[0-9]" class="form-control">
+						<input type="tel" placeholder="X" maxlength="1" pattern="[0-9]"
+							class="form-control form-control-number">
+						<input type="tel" placeholder="X" maxlength="1" pattern="[0-9]"
+							class="form-control form-control-number">
+						<input type="tel" placeholder="X" maxlength="1" pattern="[0-9]"
+							class="form-control form-control-number">
+						<input type="tel" placeholder="X" maxlength="1" pattern="[0-9]"
+							class="form-control form-control-number">
+
 					</div>
 					<button type="submit" class="w-100 btn btn-primary">Войти</button>
-					<div class="form-control">
+					<div class="form-control-send">
 						<div class="btn-primary__send">Отправить код ещё раз через:</div>
 						<div class="btn-primary__time">59 секунд</div>
 					</div>

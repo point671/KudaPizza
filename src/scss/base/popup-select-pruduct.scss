@@ -40,6 +40,7 @@ body::after {
     visibility: visible;
     transform: scale(1);
     position: absolute;
+    margin-top: 430px;
 }
 .product-selection__wrapper {
     display: flex;
@@ -100,9 +101,9 @@ body::after {
 
 .text-product-selection {
     display: flex;
-
+    flex-direction: row !important;
     @media (max-width: $mobile) {
-        flex-direction: column;
+        flex-direction: column !important;
     }
     // .text-product-selection__right
 
