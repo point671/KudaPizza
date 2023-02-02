@@ -386,7 +386,59 @@
 	opacity: 1;
 }
 
+._activeArrow {
+	&::before {
+		transform: rotate(45deg) !important;
+	}
+	&::after {
+		transform: rotate(-45deg) !important;
+	}
+}
+
 .body-food-category_buy {
 	margin-bottom: 0px !important;
 	margin-top: 0px !important;
+}
+
+.basket-header-body-none {
+	display: none;
+}
+
+.main-menu-pizza__item_other {
+	position: relative;
+}
+
+.main-menu-pizza__item_other:before {
+	content: "";
+	align-self: stretch;
+	position: absolute;
+	left: 119%;
+
+	top: 50%;
+	flex: 0 0 10px;
+	transition: all 0.3s ease 0s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10px;
+	height: 2px;
+	transform: rotate(-45deg);
+	background-color: #ff7010;
+}
+
+.main-menu-pizza__item_other:after {
+	content: "";
+	align-self: stretch;
+	position: absolute;
+	left: 105%;
+	top: 50%;
+	flex: 0 0 10px;
+	transition: all 0.3s ease 0s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10px;
+	height: 2px;
+	transform: rotate(45deg);
+	background-color: #ff7010;
 }

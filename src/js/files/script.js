@@ -4,6 +4,37 @@ import { isMobile } from "./functions.js";
 import { flsModules } from "./modules.js";
 
 
+//получаю название страницы, чтобы скрыть список категорий еды
+
+const titlePage = document.title
+
+if (titlePage) {
+    if (titlePage == 'главная') {
+        const listProduct = document.querySelector('.basket-header-body')
+        listProduct.classList.add("basket-header-body-none")
+
+    }
+}
+
+
+
+addEventListener("click", activeOtherArrow)
+
+
+
+
+function activeOtherArrow(e) {
+    if (e.target.closest(".main-menu-pizza__item_other")) {
+        const activeArrowOther = document.querySelector('.main-menu-pizza__item_other')
+
+        activeArrowOther.classList.toggle('_activeArrow')
+    }
+
+}
+
+
+
+
 
 
 const otherElem = document.querySelector('.item-pizza-menu-main-other');
@@ -168,3 +199,5 @@ inputs.forEach(input => {
         }
     })
 })
+
+
