@@ -169,6 +169,12 @@
 }
 
 .right-header-body {
+	//right-header-body__register
+
+	&__register:hover {
+		text-decoration: underline;
+	}
+
 	//right-header-body__login-in
 
 	&__login-in {

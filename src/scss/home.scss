@@ -333,6 +333,7 @@ body {
     }
 }
 .filter-catalog-filter-title {
+    cursor: pointer;
     padding: 12px 16px;
     background-color: #fff;
     display: flex;
@@ -454,6 +455,7 @@ body {
     // .item-items-food-catalog-pizz__wrap-select
 
     &__wrap-select {
+        cursor: pointer;
     }
 }
 .select-wrap-pizz-catalog-food-item {
