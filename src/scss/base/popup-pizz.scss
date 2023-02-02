@@ -59,3 +59,12 @@ body::after {
         visibility: visible;
     }
 }
+
+.body-popup {
+    overflow-y: scroll;
+}
+
+.popup {
+    @media (max-width: $mobile) {
+    }
+}

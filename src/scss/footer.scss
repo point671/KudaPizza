@@ -77,6 +77,10 @@
     }
 }
 
+.menu-column-footer div {
+    cursor: pointer;
+}
+
 .menu-column-footer {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,78 @@
+.main-accept-block {
+    //main-accept-block__body
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 380px;
+    }
+
+    // .main-accept-block__container
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    // .main-accept-block__wrap-img
+
+    &__wrap-img {
+        margin-bottom: 48px;
+    }
+
+    // .main-accept-block__img
+
+    &__img {
+    }
+
+    // .main-accept-block__title
+
+    &__title {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height, or 133% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        /* Black */
+
+        color: #191919;
+        margin-bottom: 16px;
+    }
+
+    // .main-accept-block__text
+
+    &__text {
+        /* Desktop/Normal */
+        font-family: "SF Pro Text";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        /* or 138% */
+        text-align: center;
+        /* Black */
+        color: #191919;
+        margin-bottom: 24px;
+    }
+
+    // .main-accept-block__button
+
+    &__button {
+        //styleName: Desktop/Normal;
+        font-family: SF Pro Text;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: center;
+        background-color: #ff7010;
+        color: #fff;
+        padding: 13px 32px;
+    }
+}

@@ -58,7 +58,7 @@ body::after {
 	.lock & {
 		visibility: visible;
 	}
-	height: 100vh;
+	//height: 100vh;
 }
 
 .popup {
@@ -188,6 +188,9 @@ body::after {
 		border-radius: 6px;
 		color: #fff;
 		padding: 13px 77px;
+		@media (max-width: $mobile) {
+			padding: 13px 20px;
+		}
 	}
 
 	// .button-category-popup__reset
@@ -203,5 +206,8 @@ body::after {
 		border-radius: 6px;
 		color: #ff7010;
 		padding: 13px 77px;
+		@media (max-width: $mobile) {
+			padding: 13px 20px;
+		}
 	}
 }

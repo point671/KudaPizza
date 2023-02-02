@@ -79,17 +79,17 @@
 		flex: 1 1 auto;
 	}
 	&__input {
-		width: 100%;
+		width: 115%;
 		background-color: transparent;
 		height: 100%;
 	}
 	// .select__options
 	&__options {
-		color: #000;
+		color: #fff;
 		position: absolute;
 		top: 29px;
 		border-radius: 0 0 4px 4px;
-		min-width: 100%;
+		min-width: 115%;
 		left: 0;
 		background-color: #ff7010;
 		border-top: 0;
@@ -112,7 +112,7 @@
 	}
 	// .select__option
 	&__option {
-		width: 100%;
+		width: 115%;
 		display: block;
 		text-align: left;
 		cursor: pointer;
@@ -123,7 +123,7 @@
 		}
 		@media (any-hover: hover) {
 			&:hover {
-				background: red;
+				background: black;
 			}
 		}
 	}

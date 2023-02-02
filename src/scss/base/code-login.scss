@@ -1,0 +1,124 @@
+.popup-code {
+    width: 100%;
+    // .popup-code__wrapper
+
+    &__wrapper {
+    }
+
+    // .popup-code__content
+
+    &__content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        max-width: fit-content;
+        padding: 60px 265px;
+        @include adaptiveValue("padding-left", 265, 5);
+        @include adaptiveValue("padding-right", 265, 5);
+    }
+
+    // .popup-code__body
+
+    &__body {
+    }
+}
+.body-popup {
+}
+
+.body-code-popup {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    gap: 16px;
+
+    // .body-code-popup__title
+
+    &__title {
+        //styleName: Desktop/H2;
+        font-family: Inter;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    // .body-code-popup__text
+
+    &__text {
+        //styleName: Desktop/Normal;
+        font-family: SF Pro Text;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    // .body-code-popup__tel-number
+
+    &__tel-number {
+        //styleName: Desktop/Mini;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #a5a5a5;
+    }
+
+    // .body-code-popup__form
+
+    &__form {
+    }
+
+    // .body-code-popup__text-down
+
+    &__text-down {
+        //styleName: Desktop/Mini;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #191919;
+        opacity: 0.4;
+    }
+}
+.form-popup-code-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    // .form-popup-code-body__input-tel
+
+    &__input-tel {
+        //styleName: Desktop/Normal;
+        font-family: SF Pro Text;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding: 13px 16px;
+        color: #a5a5a5;
+    }
+
+    // .form-popup-code-body__button
+
+    &__button {
+        //styleName: Desktop/Normal;
+        font-family: SF Pro Text;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: center;
+        background: #ff7010;
+        border-radius: 6px;
+        padding: 13px 40px;
+        color: #fff;
+    }
+}
